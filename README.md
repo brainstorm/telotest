@@ -12,6 +12,8 @@ experience is:
 
 ## Install process
 
+Those three commands assume that you have [Miniconda][miniconda] installed on your computer:
+
 	git clone https://github.com/brainstorm/telotest && cd telotest
     conda create -n telotest -python=3
 	pip install -r requirements.txt
@@ -29,3 +31,4 @@ When tests pass, the input dataset for this code is the [2013 human reference ge
 [TDD]: https://en.wikipedia.org/wiki/Test-driven_development
 [tox]: https://tox.readthedocs.io/en/latest/
 [hg38]: http://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
+[miniconda]: https://conda.io/miniconda.html
