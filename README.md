@@ -15,7 +15,7 @@ experience is:
 Those three commands assume that you have [Miniconda][miniconda] installed on your computer:
 
 	git clone https://github.com/brainstorm/telotest && cd telotest
-    conda create -n telotest -python=3
+    conda create -n telotest python=3
 	pip install -r requirements.txt
 
 ## Testing loop
