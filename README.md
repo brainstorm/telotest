@@ -1,9 +1,8 @@
 # Small Python and Bioinformatics interview test code
 
-This is a small **(broken, incomplete)** code project to test your overall python ecosystem and knowledge about algorithms, complexity and general data handling. For some biological context, we are handling [Telomeres][telomeres] here.
+This is a small **(broken, incomplete)** code project to test your overall python ecosystem and knowledge about algorithms, complexity and general data handling.
 
-You will be questioned and guided on several aspects during the code interview. Valuable 
-experience is:
+You will be questioned and guided on several aspects during the code interview. Valuable experience is:
 
 1) Being able to work in a collaborative way using Github.
 2) Use [test driven development][TDD] methodology to reason about inputs/outputs of code pipelines, unit tests.
@@ -33,3 +32,11 @@ When tests pass, the input dataset for this code is the [2013 human reference ge
 [hg38]: http://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
 [miniconda]: https://conda.io/miniconda.html
 [telomeres]: https://en.wikipedia.org/wiki/Telomere
+
+## Biological context
+
+[Telomere](https://en.wikipedia.org/wiki/Telomere) is a repetitive region found at each end of a chromosome. Its evolutionary role is to protect chromosome ends from degradation: after each division of our cells, the DNA shrinks a bit from each end, and telomeres take all the damage.
+
+Unfortunately, the telomers are not endless, and after certain number of cell divisions they disappear, and the cell dies. For clinical porposes, it's very important to know how much of the telomere is left on each chromosome. 
+
+This project is an attempt to solve this problem computationally from DNA sequencing data. As the first step, it finds boundaries of telomeric regions in a chromosome sequence. All telomeric regions consist of a motif CCCTAA repeated many times, and rely on that fact to find the regions.
