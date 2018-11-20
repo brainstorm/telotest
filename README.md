@@ -11,7 +11,6 @@ You will be questioned and guided on several aspects during the code interview. 
 5) Last but not least (at all): Respect the importance of deployment of (scientific) code.
 
 <blockquote class="twitter-tweet" data-lang="sv"><p lang="en" dir="ltr">Say you pick 100 random bioinformatics software tools -- how many will you actually be able to access, install, and run?<br><br>Our new paper: <a href="https://t.co/rllGmGdL1s">https://t.co/rllGmGdL1s</a> <a href="https://t.co/JzyWc0W44X">https://t.co/JzyWc0W44X</a></p>&mdash; Ran Blekhman (@blekhman) <a href="https://twitter.com/blekhman/status/1055625170809962496?ref_src=twsrc%5Etfw">26 oktober 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Install process
 
@@ -20,6 +19,8 @@ Those three commands assume that you have [Miniconda][miniconda] installed on yo
 	git clone https://github.com/brainstorm/telotest && cd telotest
     conda create -n telotest python=3
 	pip install -r requirements.txt
+
+But that should be part of a nice `.travis.yml`, right?
 
 ## Testing loop
 
