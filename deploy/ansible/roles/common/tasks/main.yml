@@ -1,0 +1,36 @@
+---
+- name: set timezone
+  timezone:
+    name: "{{ timezone }}"
+
+- name: Setup hostname to avoid unable to resolve DNS errors
+  hostname:
+    name: localhost
+
+# Trying target unattended-upgrades, works every time
+- name: Wait for automatic system updates
+  shell: while pgrep unattended; do sleep 10; done;
+
+- name: Update system and install basics
+  become: true
+  become_user: root
+  package:
+    name: "{{ item }}"
+    state: latest
+    update_cache: yes
+  with_items:
+      - git
+      - unzip
+      - wget
+      - tar
+      - gzip
+      - bzip2
+      - htop
+      - python3-docker
+      - python3-pip
+
+- name: Make sure vital python packages are installed on a python3 venv
+  become: true
+  pip:
+    name: ['docker-py', 'toml', 'boto3', 'awscli']
+    state: latest

@@ -8,6 +8,10 @@ You will be questioned and guided on several aspects during the code interview. 
 2) Use [test driven development][TDD] methodology to reason about inputs/outputs of code pipelines, unit tests.
 3) Identify bad coding practices.
 4) Improve the performance, usefulness, cleanness and generality of the code.
+5) Last but not least (at all): Respect the importance of deployment of (scientific) code.
+
+<blockquote class="twitter-tweet" data-lang="sv"><p lang="en" dir="ltr">Say you pick 100 random bioinformatics software tools -- how many will you actually be able to access, install, and run?<br><br>Our new paper: <a href="https://t.co/rllGmGdL1s">https://t.co/rllGmGdL1s</a> <a href="https://t.co/JzyWc0W44X">https://t.co/JzyWc0W44X</a></p>&mdash; Ran Blekhman (@blekhman) <a href="https://twitter.com/blekhman/status/1055625170809962496?ref_src=twsrc%5Etfw">26 oktober 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Install process
 
